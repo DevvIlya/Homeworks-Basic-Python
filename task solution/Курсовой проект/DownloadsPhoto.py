@@ -24,7 +24,7 @@ class DownloadsPhoto:
         'album_id': 'profile',
         'extended': '1',
         'access_token': self.token_vk,
-        'v':'5.131'
+        'v':'5.132'
     }
         res = requests.get(url_vk, params=params_vk)
         bar = Bar('Скачивание фото', max=len(res.json()['response']['items']))
